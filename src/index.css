@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap');
+body {
+    margin: 0;
+    font-family: 'Gemunu Libre', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+small {
+    color: #4e4e4e;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Gemunu Libre', sans-serif;
+    margin-top: 0.25rem;
+    text-transform: capitalize;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 0.2rem;
+}
+
+img {
+    padding-top: 1rem;
+    width: 120px;
+    height: 120px;
+}
+
+.rock {
+    background-image: linear-gradient(to top, #8d5e50 0%, #fd9444ec 100%);
+}
+
+.ghost {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.electric {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.bug {
+    background-image: linear-gradient(-225deg, #b87217 0%, #eacda3 100%);
+}
+
+.poison {
+    background-image: linear-gradient(225deg, #ff2897 0%, #efd6fa 100%);
+}
+
+.normal {
+    background-image: linear-gradient(-225deg, #f0faf7 0%, #a5a4a5 100%);
+}
+
+.fairy {
+    background-image: linear-gradient(120deg, #f8656a 0%, #ffb9e9 100%);
+}
+
+.fire {
+    background-image: linear-gradient(120deg, #fcc205 0%, #e7471b 100%);
+}
+
+.psychic {
+    background-image: linear-gradient(-45deg, #ea01ff 0%, #51f566 75%);
+}
+
+.grass {
+    background-image: linear-gradient(120deg, #3e9206 0%, #74ff86 100%);
+}
+
+.water {
+    background-image: linear-gradient(120deg, #0047a3 0%, #8bbafd 100%);
+}
+
+.ground {
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+}
+
+.fighting {
+    background-image: linear-gradient(315deg, #f6fa0d 0%, #f25abf 74%);
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+}
+
+.app-container h1 {
+    width: 0ch;
+    color: rgb(38, 16, 236);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 4s steps(15) infinite alternate;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 15ch;
+        color: rgb(218, 55, 5);
+    }
+}
+
+.pokemon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: inset -8px 13px 34px 4px rgba(0, 0, 0, 0.1);
+}
+
+.thumb-container .number {
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detail-wrapper button {
+    color: rgb(22, 22, 22);
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.load-more {
+    background-color: #76daff;
+    background-image: linear-gradient(200deg, #b61616 0%, #fcd000 74%);
+    border-radius: 6px;
+    border: 1px solid #c6c6c6;
+    color: #444;
+    padding: 0.5rem 1.5rem;
+    min-width: 20%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #ff0000;
+    background-image: linear-gradient(315deg, #ff0000 0%, #ffed00 74%);
+}
+
+.pokeinfo {
+    margin: 0 25px;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+    justify-content: center;
+}
+
+.pokeinfo:hover {
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+    justify-content: center;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
